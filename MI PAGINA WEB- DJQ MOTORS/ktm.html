@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+
+          new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+
+    })(window, document, 'script', 'dataLayer', 'GTM-5RD556KV');
+  </script>
+
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | KTM</title>
+
+</head>
+
+<body>
+
+<video controls src="videos/KTM 1390 SUPER DUKE R  NAKED.mp4" type="videos/mp4" ></video>
+<div class="separadorProSix visibleDesktop"></div>
+<div class="separadorProOne visibleMobile"></div>
+<div class="textSubForm">
+<a href="https://www.ktm.com/es-co.html" target="_blank"><h3>Conoce nuestros modelos</h3></a>
+<a href="https://ktmcolombia.com.co/precios.php" target="_blank"> <h3>Precios</h3></a>
+<a href="#" target="_blank">   <h3>Nuestras Tiendas</h3></a>
+</div>
+<div class="separadorProSix visibleDesktop"></div>
+<div class="separadorProFour visibleMobile"></div>
+<div class="FormKTM">
+  <form action="gracias.php" method="post">
+    <input type="hidden" name="utm_medium" value="">
+    <input type="hidden" name="utm_source" value="">
+    <input type="hidden" name="utm_campaign" value="">
+    <input type="hidden" name="utm_content" value="">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="nombre">NOMBRES</label>
+          <input type="text" onkeyup="soloLetras_nombre(this)" pattern="[A-Za-zÑñÁÉÍÓÚáéíóú\s]+" required="" id="nombre" name="nombre" class="form-control" placeholder="INGRESA TUS NOMBRES" />
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="apellidos">APELLIDOS</label>
+          <input type="text" onkeyup="soloLetras_apellido(this)" pattern="[A-Za-zÑñÁÉÍÓÚáéíóú\s]+" required="" id="apellido" name="apellido" class="form-control" placeholder="INGRESA TUS APELLIDOS" />
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="mail_personal">EMAIL</label>
+          <input onkeyup="validar_mail(this)" type="text" required="" id="mail_personal" name="mail_personal" class="form-control" placeholder="INGRESA TU CORREO ELECTRÓNICO" />
+          <div class="aviso_validacion" id="basic_alert" style="display:none">Recuerde que el formato debe incluir "@" y ".co" o ".com"</div>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="mail_personal">CELULAR</label>
+          <input type="text" onkeyup="soloNumeros_celular(this)" pattern="[3][0-9]{9}" required="" id="telefono" name="telefono" maxlength="10" minlength="10" class="form-control" placeholder="INGRESA TU NÚMERO DE CELULAR" />
+          <div class="aviso_validacion_celular" id="basic_alert_celular" style="display:none">Recuerde solo puede ingresar números y debe tener un formato valido</div>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback aler_invalid2 aler_invalid3">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="mail_personal">NÚMERO DE DOCUMENTO</label>
+          <input type="text" onkeyup="soloNumeros_documento(documento)" required="" id="documento" name="documento" maxlength="10" minlength="10" class="form-control" placeholder="INGRESA TU NÚMERO DE IDENTIFICACIÓN" />
+          <div class="aviso_validacion_documento" id="basic_alert_celular" style="display:none">Recuerde solo puede ingresar números y debe tener un formato valido</div>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback aler_invalid2 aler_invalid3">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <!-- <input type="text" onkeyup="soloLetras_apellido(this)" pattern="[A-Za-zÑñÁÉÍÓÚáéíóú\s]+" required=""  name="ciudad" class="form-control"  /> -->
+          <label for="ciudad">CIUDAD</label>
+          <select name="ciudad" id="ciudad" class="inputs" required>
+            <option value="">ELIGE TU CIUDAD</option>
+            
+<option value="ANDES">ANDES</option>
+<option value="ANAPOIMA">ANAPOIMA</option>
+<option value="APARTADO">APARTADÓ</option>
+<option value="ARMENIA">ARMENIA</option>
+<option value="BARRANQUILLA">BARRANQUILLA</option>
+<option value="BOGOTA">BOGOTÁ</option>
+<option value="BUCARAMANGA">BUCARAMANGA</option>
+<option value="CALI">CALI</option>
+<option value="CARTAGO">CARTAGO</option>
+<option value="CARTAGENA">CARTAGENA</option>
+<option value="CHIA">CHÍA</option>
+<option value="CUCUTA">CÚCUTA</option>
+<option value="DUITAMA">DUITAMA</option>
+<option value="ENVIGADO">ENVIGADO</option>
+<option value="FACATATIVA">FACATATIVÁ</option>
+<option value="FLORENCIA">FLORENCIA</option>
+<option value="GIRARDOT">GIRARDOT</option>
+<option value="IBAGUE">IBAGUÉ</option>
+<option value="ITAGUI">ITAGÜÍ</option>
+<option value="LA CEJA">LA CEJA</option>
+<option value="LA DORADA">LA DORADA</option>
+<option value="MANIZALES">MANIZALES</option>
+<option value="MEDELLIN">MEDELLÍN</option>
+<option value="MONTERIA">MONTERÍA</option>
+<option value="MONTELIBANO">MONTELIBANO</option>
+<option value="NEIVA">NEIVA</option>
+<option value="PASTO">PASTO</option>
+<option value="PEREIRA">PEREIRA</option>
+<option value="POPAYAN">POPAYÁN</option>
+<option value="PUERTO BERRIO">PUERTO BERRÍO</option>
+<option value="RIONEGRO">RIONEGRO</option>
+<option value="SAN JOSE DEL GUAVIARE">SAN JOSÉ DEL GUAVIARE</option>
+<option value="SANTA MARTA">SANTA MARTA</option>
+<option value="SINCELEJO">SINCELEJO</option>
+<option value="SIBATE">SIBATÉ</option>
+<option value="SOACHA">SOACHA</option>
+<option value="SUPIA">SUPÍA</option>
+<option value="TULUA">TULUÁ</option>
+<option value="TUNJA">TUNJA</option>
+<option value="TUMACO">TUMACO</option>
+<option value="URRAO">URRAO</option>
+<option value="VILLAVICENCIO">VILLAVICENCIO</option>
+<option value="YOPAL">YOPAL</option>
+          </select>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="modelo">MODELO QUE TE INTERESA</label>
+          <img class="flecha_img" src="./images/icons/abajo.svg" alt="">
+          <select name="modelo" id="modelo" class="inputs" required>
+            <option value="">ELIGE EL MODELO</option>
+            <option value="690 ENDURO R">690 ENDURO R</option>
+<option value="690 SMC R">690 SMC R</option>
+<option value="890 DUKE">890 DUKE</option>
+<option value="890 DUKE R">890 DUKE R</option>
+<option value="990 DUKE">990 DUKE</option>
+<option value="1290 SUPER ADVENTURE S">1290 SUPER ADVENTURE S</option>
+<option value="1290 SUPER ADVENTURE R">1290 SUPER ADVENTURE R</option>
+<option value="890 ADVENTURE">890 ADVENTURE</option>
+<option value="890 ADVENTURE R">890 ADVENTURE R</option>
+<option value="890 ADVENTURE R RALLY">890 ADVENTURE R RALLY</option>
+<option value="1390 SUPER DUKE R">1390 SUPER DUKE R</option>
+<option value="1390 SUPER DUKE R EVO">1390 SUPER DUKE R EVO</option>
+<option value="1290 SUPER DUKE GT">1290 SUPER DUKE GT</option>
+<option value="BRABUS 1300R">BRABUS 1300R</option>
+<option value="50 SX">50 SX</option>
+<option value="50 SX FACTORY EDITION">50 SX FACTORY EDITION</option>
+<option value="65 SX">65 SX</option>
+<option value="85 SX 17/14">85 SX 17/14</option>
+<option value="85 SX 19/16">85 SX 19/16</option>
+<option value="SX-E 5">SX-E 5</option>
+<option value="EE 2">EE 2</option>
+<option value="250 SX">250 SX</option>
+<option value="300 SX">300 SX</option>
+<option value="350 SX-F">350 SX-F</option>
+<option value="450 SX-F">450 SX-F</option>
+<option value="125 SX">125 SX</option>
+<option value="250 SX-F">250 SX-F</option>
+<option value="150 EXC">150 EXC</option>
+<option value="250 EXC-F">250 EXC-F</option>
+<option value="250 EXC-F SIX DAYS">250 EXC-F SIX DAYS</option>
+<option value="250 EXC">250 EXC</option>
+<option value="250 EXC SIX DAYS">250 EXC SIX DAYS</option>
+<option value="350 EXC-F">350 EXC-F</option>
+<option value="350 EXC-F SIX DAYS">350 EXC-F SIX DAYS</option>
+<option value="450 EXC-F">450 EXC-F</option>
+<option value="450 EXC-F SIX DAYS">450 EXC-F SIX DAYS</option>
+<option value="300 EXC">300 EXC</option>
+<option value="300 EXC HARDENDURO">300 EXC HARDENDURO</option>
+<option value="300 EXC SIX DAYS">300 EXC SIX DAYS</option>
+<option value="500 EXC-F">500 EXC-F</option>
+<option value="500 EXC-F SIX DAYS">500 EXC-F SIX DAYS</option>
+<option value="125 XC">125 XC</option>
+<option value="150 XC-W">150 XC-W</option>
+<option value="250 XC">250 XC</option>
+<option value="250 XC-W">250 XC-W</option>
+<option value="300 XC">300 XC</option>
+<option value="300 XC-W">300 XC-W</option>
+<option value="300 XC-W HARDENDURO">300 XC-W HARDENDURO</option>
+<option value="250 XC-F">250 XC-F</option>
+<option value="350 XC-F">350 XC-F</option>
+<option value="450 XC-F">450 XC-F</option>
+<option value="450 SMR">450 SMR</option>
+<option value="200 Duke Gen.1">200 Duke Gen.1</option>
+<option value="200 Duke Gen.2 WO">200 Duke Gen.2 WO</option>
+<option value="200 Duke Gen.2">200 Duke Gen.2</option>
+<option value="RC 200 NG">RC 200 NG</option>
+<option value="390 Duke">390 Duke</option>
+<option value="250 Duke">250 Duke</option>
+<option value="390 Adventure">390 Adventure</option>
+<option value="250 Adventure">250 Adventure</option>
+<option value="390 Adventure SW">390 Adventure SW</option>
+<option value="RC 390 NG">RC 390 NG</option>
+          </select>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Campo requerido</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="modelo">MEDIOS AUTORIZADOS DE CONTACTO</label>
+          <div class="radios_content">
+
+            <div>
+              <input type="checkbox" id="Llamada" class="form-check-input" name="flexRadioDefault1" value="Llamada" checked>
+              <label for="Llamada">Llamada</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="SMS" class="form-check-input" name="flexRadioDefault2" value="SMS" checked>
+              <label for="SMS">SMS</label>
+            </div>
+            <div>
+              <input type="checkbox" id="WhatsApp" class="form-check-input" name="flexRadioDefault3" value="WhatsApp" checked>
+              <label for="WhatsApp">WhatsApp</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Email" class="form-check-input" name="flexRadioDefault4" value="Email" checked>
+              <label for="Email">Email</label>
+            </div>
+
+
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback" id="obligatorioAreas" style="display: none;">Campo Requerido</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="input_10" id="input_10" value="si" title="" required="required" data-toggle="tooltip" data-placement="top" />
+            <label class="form-check-label check_legal legal_check" for="input_10">
+              He leído y acepto los términos y condiciones de uso
+            </label>
+          </div>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback"></div>
+          <div class="" id="chk_Valide_Data"></div>
+          <br />
+          <p style="text-align: justify;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="btnKTM">
+      <button type="submit" class="btn btn-primary cta" id="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+
+<div class="modulo-HU02-1 slider">
+<div>
+<img src="images/banner/secundario/BANNER-KTM-250-EX-C.jpg" class="visibleDesktop" alt="KTM" />
+<img src="images/banner/secundario/movil/Banners-Mobile-250-EXC.jpg" class="visibleMobile" alt="KTM" />
+</div>
+<div>
+<img src="images/banner/secundario/BANNER-KTM-250-SX-F.jpg" class="visibleDesktop" alt="KTM" />
+<img src="images/banner/secundario/movil/Banners-Mobile-250-SX.jpg" class="img-fluid w-100 visibleMobile" alt="KTM" />
+</div>
+<div>
+<img src="images/banner/secundario/BANNER-KTM-450-SMR.jpg" class="visibleDesktop" alt="KTM" />
+<img src="images/banner/secundario/movil/Banners-Mobile-690-SMC.jpg" class="visibleMobile" alt="KTM" />
+</div>
+<div>
+<img src="images/banner/secundario/BANNER-KTM-890.jpg" class="visibleDesktop" alt="KTM" />
+<img src="images/banner/secundario/movil/Banners-Mobile-890-adv.jpg" class="visibleMobile" alt="KTM" />
+</div>
+</div>
+<div class="separadorProSix visibleDesktop"></div>
+<div class="separadorProFour visibleMobile"></div>
+<div class="readyToRacer">
+<img src="images/others/ReadyToRacer.svg" alt="Ready To Racer KTM" />
+</div>
+<div class="separadorProSix visibleDesktop"></div>
+<div class="separadorProFour visibleMobile"></div>
+<div class="bgVideo">
+<div class="contentVideo">
+<a class="popup-youtube" href="https://www.youtube.com/watch?v=HD_ICY7SI6E">
+  <img src="images/others/video.png" alt="KTM Video">
+</a>
+</div>
+</div>
+
+<div class="separadorProSix visibleDesktop"></div>
+<div class="separadorProFour visibleMobile"></div>
+<footer>
+<div class="preguntas_frecuentes_content">
+<p class="preguntas_frecuentes_titulo">PREGUNTAS FRECUENTES</p>
+<p class="preguntas_frecuentes_subtitulo">Toda la información que necesitas.</p>
+<div class="accordion">
+<div class="accordion-item">
+  <div class="accordion-header" onclick="toggleAccordion(1)">
+    ¿Por qué ha cambiado la distribución de motos KTM de esta empresa a otra? <img src="./images/icons/Vector.svg" alt="">
+  </div>
+  <div class="accordion-body" id="accordion-1">
+    El cambio en la distribución de las motos KTM se debe a decisiones estratégicas y acuerdos comerciales entre la marca KTM, Autocolombiana y Auteco. Este cambio representa nuevos esfuerzos en beneficio de la familia naranja, manteniendo la excelencia en el servicio, aumentando la presencia de la marca en el país y generando nuevas experiencias para nuestros clientes.
+  </div>
+</div>
+<div class="accordion-item">
+  <div class="accordion-header" onclick="toggleAccordion(2)">
+    ¿Cómo afecta este cambio a los clientes que ya son propietarios de motos KTM? <img src="./images/icons/Vector.svg" alt="">
+  </div>
+  <div class="accordion-body" id="accordion-2">
+    Este cambio no afecta de manera alguna las condiciones actuales de los clientes y/o propietarios de vehículos de la marca, sin embargo, redundará en nuevos beneficios para la familia naranja en cuanto a experiencias de servicio, enfocadas en la atención al cliente, el acceso a repuestos y servicios posventa.
+  </div>
+</div>
+<div class="accordion-item">
+  <div class="accordion-header" onclick="toggleAccordion(3)">
+    ¿Dónde puedo encontrar ahora servicios de mantenimiento, garantías y repuestos para mi moto KTM? <img src="./images/icons/Vector.svg" alt="">
+  </div>
+  <div class="accordion-body" id="accordion-3">
+    La red de Tiendas y Centros de Servicio Autorizados de la marca no sufrirá modificaciones para el año 2024. En caso de requerirlo, puede acercarse al Centro de Servicio más cercano. En la página web <a target="_blank" href="https://www.ktm.com/es-co/dealer-search.html">https://www.ktm.com/es-co/dealer-search.html</a> encontrará la información acerca de la ubicación de los puntos de atención
+  </div>
+</div>
+</div>
+<!-- <a class="boton_footer" href="">CONTÁCTANOS</a> -->
+</div>
+<div class="socialMedia">
+<div class="footer_izq">
+<img class="logo_footer_ktm" src="./images/logos/footer_logo.svg" alt="">
+<a target="_blank" href="./precios.php">Conoce nuestros precios</a>
+<p>Contáctanos en: ktmcolombia@autocolombiana.com.co</p>
+<!-- <a target="_blank" href="https://landing.autocolombiana.com.co/terminos-y-condiciones-precios-autocolombiana">Política de tratamiento de datos</a> -->
+<a target="_blank" href="./politicas.php">Términos y condiciones</a>
+ <a target="_blank" href="./files/POLITICA DE TRATAMIENTO DE DATOS PERSONALES (1).pdf" >Política de tratamiento de datos</a>
+<a target="_blank" href="./files/Politica Garantía_AC_KTM.pdf">Politica de garantia</a>
+<a target="_blank" href="./files/Politica de cambio.pdf">Politica de cambio</a>
+<a href="https://autocolombiana.com.co/pqrs/autocolombiana/" target="_blank">PQRS</a>
+<!-- <a href="./politicas.php">PQRS</a> -->
+</div>
+<div class="footer_der">
+<a href=""><img src="./images/logos/logo-autocolombiana.svg" alt=""></a>
+<a href="https://www.sic.gov.co"><img src="./images/logos/Rectangle.svg" alt=""></a>
+</div>
+<hr class="linea_footer">
+<div class="content_end">
+<div class="footer_end_izq">
+  <!--   <a href="https://api.whatsapp.com/send/?phone=584129706776&text&type=phone_number&app_absent=0" target="_blank">
+  <img src="images/social-media/icoWhatssap.svg" alt="Whatssap KTM" />
+</a> -->
+  <a href="https://www.facebook.com/KtmColombia" target="_blank">
+    <img src="images/social-media/icoFacebook.svg" alt="Facebook KTM" />
+  </a>
+  <a href="https://www.instagram.com/ktm_colombia/" target="_blank">
+    <img src="images/social-media/icoInstagram.svg" alt="Instagram KTM" />
+  </a>
+</div>
+<div class="arriba_content">
+  <a href="#" onclick="scrollToTop()">VOLVER ARRIBA <img src="./images/icons/arriba.svg" alt=""></a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>

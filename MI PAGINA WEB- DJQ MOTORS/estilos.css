@@ -1,0 +1,327 @@
+
+
+body {
+   overflow-x: hidden;
+      margin: 0.5%; /* Esto añade un margen del % alrededor del cuerpo del documento */
+      padding: 0;
+      background-color: #f5f5f5;
+      border: 10px solid #f5f5f5;
+}
+#cabecera {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+   background-color: rgb(17, 64, 109);
+   padding: 25px;
+   color: whitesmoke;
+   text-align: center;
+   margin: 0%;
+   border: 2px;
+}
+h1 {
+   margin: 0;
+   font-size: 3.5em;
+   
+}
+hr {
+   margin: 10px ;
+   border: 2px solid #ccc;
+}
+.image-container {
+   display: flex; /* Utiliza Flexbox para alinear imágenes */
+   justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center;
+   
+}
+img {
+  
+ 
+   border-radius: 4px; /* Redondea los bordes de las imágenes */
+   max-width: 120px; /* Tamaño máximo de las imágenes */
+   height: auto; /* Mantiene la proporción de las imágenes */
+}
+h2 {
+ margin: 0px auto;
+  font-family: Arial, Helvetica, sans-serif;
+   font-size: 2.5em;
+  text-align: center;
+}
+
+
+aside{
+   width: 25%; /* La barra lateral ocupa el 25% del ancho */
+   background-color: #f5f5f5;
+   padding: 20px;
+   border-left: solid 1px #ccc;
+   
+}
+section{
+   display: flex;
+   justify-content: left;
+   align-items: left;
+   gap: 1px; /* Espacio entre imágenes */
+   
+      width: 100%; /* Ajusta para que no exceda el ancho de la ventana */
+      height: 500px;
+      margin: 20px;
+  
+
+}
+section img{
+   width: 70%;  /* Usar todo el ancho disponible del contenedor */
+   max-width: 310px; /* Tamaño máximo para cada imagen */
+   height: 100%; /* Ajustar a la altura del contenedor */
+   object-fit: cover; /* Mantener proporción y recortar si es necesario */
+   border-radius: 5px;
+   transition: all 0.4s ease; /* Transición más suave */
+   opacity: 0.9;
+
+}
+
+section img:hover{
+
+   cursor: pointer;
+   width: 280px; /* Ampliar al pasar el ratón */
+   opacity: 3;
+   filter: contrast(100%);
+
+}
+.clearfix{
+clear:both;
+
+}
+nav {
+   background-color: rgb(17, 64, 109); /* Color de fondo de la barra */
+   border-radius: 8px; /* Bordes redondeados para la barra */
+   padding: 10px 20px; /* Espaciado interno para mayor comodidad */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+   text-align: center; /* Centrar el contenido */
+   margin: 20px 0; /* Separar la barra del contenido */
+}
+
+/* Estilos de los elementos de la lista del menú */
+nav ul {
+   list-style-type: none; /* Eliminar viñetas */
+   padding: 0;
+   margin: 0;
+}
+
+/* Estilos para los elementos de lista */
+nav ul li {
+   display: inline-block; /* Mostrar los elementos en línea */
+   margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+/* Estilos para los enlaces dentro del menú */
+nav ul li a {
+   color: #f5f5f5; /* Color de texto claro */
+   text-decoration: none; /* Eliminar subrayado */
+   font-family: 'Segoe UI', Arial, sans-serif; /* Fuente moderna */
+   font-size: 1.5em; /* Tamaño de texto */
+   padding: 10px 20px; /* Espaciado interno */
+   border-radius: 5px; /* Bordes redondeados para enlaces */
+   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Efectos al pasar el ratón sobre el enlace */
+nav ul li a:hover {
+   background-color: #007f9e; /* Cambiar color de fondo al pasar el ratón */
+   transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+/* Línea decorativa debajo del enlace */
+nav ul li a:after {
+   content: ''; /* Contenido vacío para crear la línea */
+   display: block;
+   width: 0;
+   height: 2px;
+   background: #f5f5f5; /* Color de la línea */
+   transition: width 0.3s ease; /* Transición de la línea */
+   margin-top: 5px;
+}
+
+/* Expansión de la línea al pasar el ratón */
+nav ul li a:hover:after {
+   width: 100%; /* La línea se expande al 100% */
+}
+.imagenes{
+
+   border-radius: 5px; /* Redondea los bordes de las imágenes */
+   max-width: 800px; /* Tamaño máximo de las imágenes */
+   height: 300px; /* Mantiene la proporción de las imágenes */
+
+}a{
+
+   color :#f5f5f5;
+   font-size: large;
+   font-family: Arial, Helvetica, sans-serif;
+}footer{
+
+   background-color: #007f9e;
+   margin: 0;
+   justify-content: center;
+}p{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+#content {
+   display: flex;  /* Flexbox para alinear la imagen y el texto */
+   align-items: center;  /* Alinea verticalmente al centro */
+   justify-content: flex-start;  /* Alinea horizontalmente a la izquierda */
+   gap: 20px;  /* Espacio entre la imagen y el texto */
+   
+}
+
+article {
+   display: flex;  /* Flexbox dentro del artículo */
+   align-items: center;  /* Alinea verticalmente */
+   gap: 20px;  /* Espacio entre la imagen y el texto */
+}
+
+article img {
+   max-width: 45%;  /* Tamaño máximo de la imagen */
+   max-height: auto;  /* Mantén la proporción de la imagen */
+   border-radius: 10px;  /* Bordes redondeados */
+   padding: 30px;
+   
+   opacity: 8;
+}
+
+article div {
+   max-width: 60%;  /* El texto ocupará el 60% del ancho disponible */
+}
+
+article h2 {
+   font-size: 2.7em;  /* Ajuste del tamaño del título */
+   padding:  0  ;
+   margin-bottom: 0; 
+  text-align: center;
+  margin: 38px 190px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+article p {
+   
+   text-align: center;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 1.7em;
+   margin: 10px 70px;
+color: black;
+
+}
+.formulario-container {
+   margin-top: 40px;  /* Espacio entre el contenido y el formulario */
+   padding: 20px;  /* Espacio interno dentro del formulario */
+ 
+   border-radius: 10px;  /* Bordes redondeados */
+   background-color: #e0f0fa;  /* Fondo suave para destacar el formulario */
+}
+
+.formulario-container {
+   margin-top: 40px;
+   padding: 30px;
+   border-radius: 10px;
+   background-color: rgb(17, 64, 109); /* Color de la cabecera */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado del formulario */
+.formulario-container h3 {
+   font-family: 'Segoe UI', Roboto, sans-serif;
+   text-align: center;
+   font-size: 2em;
+   color: whitesmoke;
+   margin-bottom: 20px;
+}
+
+/* Elementos del formulario */
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+label {
+   font-size: 1.2em;
+   color: #e0f0fa; /* Texto claro para contraste */
+   font-weight: bold;
+}
+
+input, textarea {
+   padding: 15px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   font-size: 1.1em;
+   background-color: #f5f5f5;
+   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+   transition: box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+   outline: none;
+   box-shadow: 0 0 8px rgba(0, 127, 158, 0.8); /* Luz suave al enfocar */
+   border-color: #007f9e;
+}
+
+/* Botón llamativo */
+button {
+   padding: 12px 20px;
+   background-color: #007f9e; /* Color brillante para botón */
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 1.2em;
+   transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+   background-color: #00b2d4; /* Efecto hover con un color más vivo */
+   transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+.video-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px 0; /* Espacio arriba y abajo del video */
+}
+
+/* Video responsivo */
+.video-container video {
+   max-width: 95%; /* El video ocupará hasta el 90% del ancho de la pantalla */
+   height: auto; /* Mantiene la proporción del video */
+   border-radius: 10px; /* Bordes redondeados para un diseño más elegante */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del video */
+}
+.social-media-container {
+   display: flex;
+   justify-content: center; /* Centra horizontalmente los íconos */
+   align-items: center; /* Alineación vertical al centro */
+   gap: 40px; /* Espacio uniforme entre los íconos */
+   margin-bottom: 40px; /* Espacio adicional debajo de los íconos */
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-media-container img {
+   width: 50px; /* Tamaño de los íconos */
+   height: auto; /* Mantener proporción */
+   transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.social-media-container img:hover {
+   transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+}
+footer {
+   background-color: #007f9e;
+   color: white;
+   text-align: center;
+   padding: 15px;
+   margin-top: 30x;
+   margin: 0%;
+   position: relative;
+   width: 98%;
+   bottom: 0;
+}
+
+/* Ajuste de separación del formulario */
+.formulario-container {
+   margin-bottom: 40px; /* Más espacio entre el formulario y las redes sociales */
+}
